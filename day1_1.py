@@ -22,8 +22,10 @@ def say_hi(get_hour, username):
         print("Good morning, " + username)
     elif 10 <= get_hour <= 16:
         print("Good day, " + username)
-    else:
+    elif 17 <= get_hour <= 17:
         print("Good evening, " + username)
+    else:
+        print("Something went wrong (hour number is out of 0-23")
 
 get_pst_time = datetime.datetime.now(datetime.timezone.utc).astimezone()
 #test1 print(get_pst_time)
